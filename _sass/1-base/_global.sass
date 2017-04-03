@@ -1,0 +1,71 @@
+// Global Styling
+
+// HTML Elements
+
+html, *
+  box-sizing: border-box
+
+html, body
+  margin: 0
+  padding: 0
+
+body
+  padding-bottom: 3rem
+
+section
+  padding: 2rem 1rem 0 1rem
+
+@media screen and (min-width: $tablet-breakpoint)
+  body
+    padding-bottom: 0
+  
+  section
+    padding: 2rem 10% 0 10%
+
+// Global Elements
+
+
+// Buttons
+
+.button
+  font-size: 1rem
+  padding: .5rem 1.5rem
+  background-color: $divider-color
+  border: none
+  border-radius: 2px
+  box-shadow: $box-shadow
+  transition: $primary-transition
+  text-decoration: none
+  color: $primary-text-color
+  &:hover
+    background-color: darken($divider-color, 10%)
+
+.button-large
+  font-size: 1.25rem
+  padding: 1rem 2rem
+
+.button-small
+  font-size: .75rem
+  padding: .5rem 1rem
+
+.primary-button
+  background-color: $primary-color
+  &:hover
+    background-color: darken($primary-color, 10%)
+
+.secondary-button
+  background-color: $secondary-color
+  &:hover
+    background-color: darken($secondary-color, 10%)
+
+.outline-primary-button
+  background-color: transparent
+  border: 1px solid $primary-color
+  &:hover
+    background-color: lighten($primary-color, 30%)
+
+.outline-secondary-button
+  background-color: transparent
+  border: 1px solid $secondary-color
+  &:hover
+    background-color: lighten($secondary-color, 30%)

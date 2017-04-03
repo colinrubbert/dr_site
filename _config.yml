@@ -1,0 +1,20 @@
+title: Dr. Kirtida N. Ringwala M.D.
+description: Dr. Kirtida Ringwala has been providing medical care to Oshkosh area residents for more than 30 years. She provides comprehensive care to all age groups, including physicals and caring for chronic and short-term health problems. Beyond serving patients at her private practice, she also treats patients at area hospitals.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Contact Settings
+email: your-email@domain.com
+phone: 920-236-3214
+facebook-username: DrKNRingwala
+
+# Build Settings
+sass:
+  style: :nested
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
