@@ -22,7 +22,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: Hind, "Helvetica Nueue", Helvetica, sans-serif; }
+  font-family: Hind, "Helvetica Nueue", Helvetica, sans-serif;
+  color: #313335; }
 
 body, html, h1, h2, h3, h4, h5, h6, p,
 .huge, .x-large, .large, .medium, .small, .x-small {
@@ -126,12 +127,17 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0 1rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
 
 .navigation-logo {
   height: 3rem;
   width: auto; }
+
+.navigation-title {
+  font-size: 1.5rem;
+  margin: 0; }
 
 .desktop-navigation-wrapper {
   display: none; }
@@ -146,6 +152,9 @@ section {
     color: #313335;
     font-size: 1.5rem;
     text-decoration: none; }
+    .desktop-navigation-wrapper a:hover {
+      color: #446CB3;
+      transition: all ease-in-out 500ms; }
 
 .navigation-icons {
   position: fixed;
@@ -206,10 +215,6 @@ section {
   .navigation-wrapper {
     justify-content: space-between;
     padding: 0 10%; }
-
-  .navigation-logo {
-    height: 3rem;
-    width: auto; }
 
   .desktop-navigation-wrapper {
     display: block; }
