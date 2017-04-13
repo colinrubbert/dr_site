@@ -7,6 +7,8 @@
  * 4. Global Settings & HTML Elements
  * 5. Navigation Styling
  * 6. Hero Styling
+ * 7. Doctor Landing Styling
+ * 8. Staff Landing Styling
  *
  */
 /* 1. Imported Fonts */
@@ -73,6 +75,9 @@ section {
 
   section {
     padding: 2rem 10% 0 10%; } }
+.section-title {
+  text-align: center; }
+
 .button {
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
@@ -251,3 +256,76 @@ section#hero {
 @media screen and (min-width: 800px) {
   section#hero {
     height: 30rem; } }
+/* 7. Doctor Landing Styling */
+section#doctor {
+  width: 100%; }
+
+.doctor-information-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.doctor-photo {
+  width: 100%; }
+
+.doctor-information {
+  width: 100%; }
+  .doctor-information h3 {
+    text-align: center; }
+
+@media screen and (min-width: 800px) {
+  .doctor-information-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+
+  .doctor-photo {
+    width: 50%; }
+    .doctor-photo img {
+      float: right; }
+
+  .doctor-information {
+    width: 50%; }
+    .doctor-information h3 {
+      text-align: center; } }
+/* 8. Staff Landing Styling */
+section#staff {
+  width: 100%; }
+
+.staff-information-wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.staff-member-wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center; }
+
+.staff-photo img {
+  margin-bottom: 1rem; }
+
+.staff-name {
+  margin: 0; }
+
+@media screen and (min-width: 800px) {
+  .staff-information-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .staff-member-wrapper {
+    width: 50%;
+    max-width: 50%;
+    justify-content: space-between; } }
+@media screen and (min-width: 1200px) {
+  .staff-member-wrapper {
+    width: 25%;
+    max-width: 25%; } }
