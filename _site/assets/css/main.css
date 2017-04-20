@@ -265,12 +265,17 @@ section#doctor {
 
 .doctor-information-wrapper {
   width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
 .doctor-photo {
-  width: 100%; }
+  max-width: 100%; }
+  .doctor-photo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
 
 .doctor-information {
   width: 100%; }
@@ -285,6 +290,8 @@ section#doctor {
   .doctor-photo {
     width: 50%; }
     .doctor-photo img {
+      width: 320px;
+      max-width: 320px;
       float: right; }
 
   .doctor-information {
@@ -313,7 +320,10 @@ section#staff {
   text-align: center; }
 
 .staff-photo img {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
 
 .staff-name {
   margin: 0; }
@@ -327,7 +337,12 @@ section#staff {
   .staff-member-wrapper {
     width: 50%;
     max-width: 50%;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  .staff-photo img {
+    width: 160px;
+    max-width: 160px;
+    height: auto; } }
 @media screen and (min-width: 1200px) {
   .staff-member-wrapper {
     width: 25%;
