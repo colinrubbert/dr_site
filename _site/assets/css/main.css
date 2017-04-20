@@ -351,6 +351,11 @@ section#staff {
 section#insurance {
   width: 100%; }
 
+.disclaimer {
+  display: block;
+  text-align: center;
+  margin: 0 auto 2rem; }
+
 .insurance-information-wrapper {
   width: 100%;
   max-width: 100%;
@@ -363,11 +368,24 @@ section#insurance {
 .insurance-provider-wrapper {
   width: 50%;
   max-width: 50%;
+  height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.provider-photo {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  max-width: 160px;
+  height: 160px;
+  margin: 0 0 1rem 0; }
+  .provider-photo img {
+    width: 100%;
+    height: auto; }
 
 @media screen and (min-width: 800px) {
   .insurance-provider-wrapper {
