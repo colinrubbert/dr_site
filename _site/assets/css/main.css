@@ -379,9 +379,9 @@ section#insurance {
 .provider-photo {
   display: flex;
   align-items: center;
-  width: 160px;
-  max-width: 160px;
-  height: 160px;
+  width: 120px;
+  max-width: 120px;
+  height: 120px;
   margin: 0 0 1rem 0; }
   .provider-photo img {
     width: 100%;
