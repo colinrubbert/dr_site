@@ -2,6 +2,7 @@
 
 section#contact
   width: 100%
+  background: #f8f8f8
 
 .contact-wrapper
   width: 100%
@@ -9,6 +10,11 @@ section#contact
   display: flex
   flex-direction: column-reverse
   justify-content: space-between
+  padding-bottom: 2rem
+  h3
+    width: 80%
+    margin: 0 auto
+    text-align: center
 
 .contact-map-wrapper
   width: 100%
@@ -28,7 +34,57 @@ section#contact
       max-width: 80%
       margin: 0 auto
       padding-bottom: .5rem
-      h5
-        margin: 0
-      .contact-item
-        display: inline-block
+
+.contact-item-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+.contact-item
+  margin-left: 1rem
+
+// Media Queries
+@media screen and (min-width: $tablet-breakpoint)
+  .contact-wrapper
+    flex-direction: row-reverse
+    justify-content: space-between
+    align-items: center
+    padding: 2rem 0
+
+  .contact-information-wrapper
+    h3
+      width: 100%
+      max-width: 100%
+      text-align: left
+
+  .contact-map-wrapper
+    width: 50%
+    max-width: 50%
+
+  .contact-information-wrapper
+    width: 50%
+    max-width: 50%
+    ul
+      li
+        width: 100%
+        max-width: 100%
+
+  .contact-item-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+
+  .contact-item
+    margin-left: 1rem
+
+@media screen and (min-width: $desktop-breakpoint)
+  .contact-wrapper
+    width: 80%
+    max-width: 80%
+    margin: 0 auto
+
+  .contact-map-wrapper
+    width: 50%
+    max-width: 50%
