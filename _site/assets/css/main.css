@@ -258,7 +258,7 @@ section#hero {
   text-align: center;
   text-shadow: 1px 1px 1px #737373; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   section#hero {
     height: 30rem;
     background-position: 50% 20%; } }
