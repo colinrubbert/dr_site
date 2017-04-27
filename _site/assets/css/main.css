@@ -11,6 +11,7 @@
  * 8. Staff Landing Styling
  * 9. Insurance Provider Styling
  * 10. Contact Styling
+ * 11. Footer Styling
  *
  */
 /* 1. Imported Fonts */
@@ -485,3 +486,19 @@ section#contact {
   .contact-map-wrapper {
     width: 50%;
     max-width: 50%; } }
+/* 11. Footer Styling */
+footer {
+  display: none; }
+
+@media screen and (min-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem; }
+    footer h1 {
+      margin: 0;
+      font-size: 1.5rem; }
+    footer .copyright {
+      margin: 0; } }
