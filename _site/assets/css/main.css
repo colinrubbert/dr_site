@@ -236,7 +236,7 @@ section#hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(http://cdn-media-2.lifehack.org/wp-content/files/2017/01/23171802/o-DOCTOR-PATIENT-facebook.jpg);
+  background-image: url("/assets/images/stock_photos/nurse_2.jpg");
   height: 15rem;
   color: #fff;
   text-shadow: 0px 0px 3px #ccc; }
@@ -255,11 +255,13 @@ section#hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 1px 1px 1px #737373; }
 
 @media screen and (min-width: 800px) {
   section#hero {
-    height: 30rem; } }
+    height: 30rem;
+    background-position: 50% 20%; } }
 /* 7. Doctor Landing Styling */
 section#doctor {
   width: 100%; }
