@@ -1,0 +1,47 @@
+- name: Medicare
+  photo: medicare.gif
+  alt: Medicare Logo
+
+- name: Medicaid
+  photo: medicare.gif
+  alt: Medicaid Logo
+
+- name: Network Health
+  photo: network.png
+  alt: Network Health Logo
+
+- name: United Health
+  photo: united.png
+  alt: United Health Logo
+
+- name: Humana
+  photo: humana.png
+  alt: Humana Logo
+
+- name: WPS*
+  photo: wps.jpg
+  alt: WPS Logo
+
+- name: UMR
+  photo: umr.png
+  alt: UMR Logo
+
+- name: Molina
+  photo: molina.png
+  alt: Molina Logo
+
+- name: Aetna
+  photo: aetna.png
+  alt: Aetna Logo
+
+- name: Cigna
+  photo: cigna.png
+  alt: Cigna Logo
+
+- name: Blue Cross & Blue Shield
+  photo: bcbs.png
+  alt: Blue Cross & Blue Shield Logo
+
+- name: More...
+  photo: more.png
+  alt: More Logo
