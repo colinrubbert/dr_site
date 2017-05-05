@@ -2,77 +2,15 @@
   <h1 class="section-title">Accepted Insurers</h1>
   <small class="disclaimer">* some restrictions apply</small>
   <div class="insurance-information-wrapper">
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/medicare.gif" alt="Medicare">
-      </figure>
-      <h3 class="provider-name">Medicare</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/medicare.gif" alt="Medicaid">
-      </figure>
-      <h3 class="provider-name">Medicaid*</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/network.png" alt="Network Health">
-      </figure>
-      <h3 class="provider-name">Network Health</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/united.png" alt="United Health Care">
-      </figure>
-      <h3 class="provider-name">United Health</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/humana.png" alt="Humana">
-      </figure>
-      <h3 class="provider-name">Humana</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/wps.jpg" alt="Wisconsin Physicians Service">
-      </figure>
-      <h3 class="provider-name">WPS*</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/umr.png" alt="UMR Insurance">
-      </figure>
-      <h3 class="provider-name">UMR</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/molina.png" alt="Molina Health Care">
-      </figure>
-      <h3 class="provider-name">Molina</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/aetna.png" alt="Aetna">
-      </figure>
-      <h3 class="provider-name">Aetna</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/cigna.png" alt="Cigna">
-      </figure>
-      <h3 class="provider-name">Cigna</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/bcbs.png" alt="Blue Cross Blue Shield">
-      </figure>
-      <h3 class="provider-name">Blue Cross &amp; Blue Shield</h3>
-    </div>
-    <div class="insurance-provider-wrapper">
-      <figure class="provider-photo">
-        <img src="{{ site.baseurl }}assets/images/insurance_logos/more.png" alt="More Icon">
-      </figure>
-      <h3 class="provider-name">More...</h3>
-    </div>
+
+    {% for insurer in site.data.insurers %}
+      <div class="insurance-provider-wrapper">
+        <figure class="provider-photo">
+          <img src="{{ site.baseurl }}assets/images/insurance_logos/{{ insurer.photo }}" alt="{{ insurer.alt }}">
+        </figure>
+        <h3 class="provider-name">{{ insurer.name }}</h3>
+      </div>
+    {% endfor %}
+
   </div>
 </section>
