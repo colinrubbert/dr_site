@@ -7,11 +7,12 @@
  * 4. Global Settings & HTML Elements
  * 5. Navigation Styling
  * 6. Hero Styling
- * 7. Doctor Landing Styling
- * 8. Staff Landing Styling
- * 9. Insurance Provider Styling
- * 10. Contact Styling
- * 11. Footer Styling
+ * 7. CTA Styling
+ * 8. Doctor Landing Styling
+ * 9. Staff Landing Styling
+ * 10. Insurance Provider Styling
+ * 11. Contact Styling
+ * 12. Footer Styling
  *
  */
 /* 1. Imported Fonts */
@@ -228,7 +229,29 @@ section {
 
   .mobile-navigation-wrapper {
     display: none; } }
-/* 6. Hero Styling */
+/* 6. CTA Styling */
+section#cta {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #e46974 0%, #ea3f71 100%); }
+  section#cta h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem; }
+  section#cta h2, section#cta h4 {
+    margin-bottom: 0; }
+
+@media screen and (min-width: 800px) {
+  section#cta h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem; }
+  section#cta h2, section#cta h4 {
+    margin-bottom: 0; }
+  section#cta br {
+    display: none; } }
+/* 7. Hero Styling */
 section#hero {
   position: relative;
   width: 100%;
@@ -236,7 +259,7 @@ section#hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url("/assets/images/stock_photos/nurse_2.jpg");
+  background-image: url("/assets/images/stock_photos/nurse_22.jpg");
   height: 15rem;
   color: #fff;
   text-shadow: 0px 0px 3px #ccc; }
@@ -262,7 +285,7 @@ section#hero {
   section#hero {
     height: 30rem;
     background-position: 50% 20%; } }
-/* 7. Doctor Landing Styling */
+/* 8. Doctor Landing Styling */
 section#doctor {
   width: 100%; }
 
@@ -301,7 +324,7 @@ section#doctor {
     width: 50%; }
     .doctor-information h3 {
       text-align: center; } }
-/* 8. Staff Landing Styling */
+/* 9. Staff Landing Styling */
 section#staff {
   width: 100%; }
 
@@ -350,7 +373,7 @@ section#staff {
   .staff-member-wrapper {
     width: 25%;
     max-width: 25%; } }
-/* 9. Insurance Provider Styling */
+/* 10. Insurance Provider Styling */
 section#insurance {
   width: 100%; }
 
@@ -404,7 +427,7 @@ section#insurance {
     width: 80px;
     max-width: 80px;
     height: 80px; } }
-/* 10. Contact Styling */
+/* 11. Contact Styling */
 section#contact {
   width: 100%;
   background: #F8F8F8; }
@@ -488,7 +511,7 @@ section#contact {
   .contact-map-wrapper {
     width: 50%;
     max-width: 50%; } }
-/* 11. Footer Styling */
+/* 12. Footer Styling */
 footer {
   display: none; }
 
